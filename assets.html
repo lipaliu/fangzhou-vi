@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>方舟智创 FANGZHOU · 品牌视觉资产库与全部方案总览</title>
+<style>
+:root {
+  --bg0:#051016; --bg1:#0A1C23; --sea:#14354E; --plume:#2E7188; --accent:#3B858D; --glow:#2BCFE1; --glow2:#6FA8FF; --mint:#8FDCD2;
+  --glow-rgb:43 207 225; --bg0-rgb:5 16 22;
+  --fg:#E6F1F3; --fg2:#93AAB0; --line:rgba(255,255,255,.09);
+  --font:"PingFang SC","HarmonyOS Sans SC","Microsoft YaHei",sans-serif;
+  --ease:cubic-bezier(.22,1,.36,1);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: var(--bg0); color: var(--fg); font-family: var(--font); -webkit-font-smoothing: antialiased; padding-top: 76px; }
+a { color: inherit; text-decoration: none; }
+button { font: inherit; color: inherit; cursor: pointer; }
+.num { font-variant-numeric: tabular-nums; }
+.lab { font-size: 11px; font-weight: 500; letter-spacing: .18em; text-transform: uppercase; }
+
+/* Unified Portal Topbar */
+.portal-nav { position: fixed; top: 0; left: 0; right: 0; height: 64px; padding: 0 36px; display: flex; align-items: center; justify-content: space-between; z-index: 90; background: rgb(var(--bg0-rgb) / .82); border-bottom: 1px solid var(--line); backdrop-filter: blur(18px); }
+.portal-brand { display: flex; align-items: center; gap: 12px; }
+.portal-brand img { height: 24px; display: block; }
+.portal-tabs { display: inline-flex; gap: 4px; padding: 4px; border-radius: 999px; background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.1); }
+.portal-tabs a { padding: 7px 16px; border-radius: 999px; font-size: 13px; color: var(--fg2); transition: .25s var(--ease); }
+.portal-tabs a:hover { color: #fff; }
+.portal-tabs a.on { background: var(--glow); color: #031015; font-weight: 600; }
+
+.wrap { max-width: 1240px; margin: 0 auto; padding: 36px 36px 90px; }
+.hero { padding: 36px 40px; border-radius: 20px; background: radial-gradient(ellipse 680px 360px at 88% 12%, rgb(var(--glow-rgb) / .22), transparent 68%), linear-gradient(145deg, var(--bg1), var(--bg0)); border: 1px solid var(--line); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px; margin-bottom: 44px; }
+.hero h1 { font-size: 40px; font-weight: 600; color: #fff; margin: 10px 0 12px; letter-spacing: .03em; }
+.hero p { max-width: 560px; font-size: 14px; line-height: 1.85; color: var(--fg2); }
+.hero-stats { display: flex; gap: 22px; }
+.hero-stats div { padding-left: 16px; border-left: 2px solid var(--glow); }
+.hero-stats b { display: block; font-size: 26px; color: #fff; }
+.hero-stats span { font-size: 11px; color: var(--fg2); }
+
+.sec { margin-bottom: 58px; }
+.sec-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 20px; padding-bottom: 16px; border-bottom: 1px solid var(--line); margin-bottom: 24px; flex-wrap: wrap; }
+.sec-head h2 { font-size: 28px; font-weight: 600; color: #fff; margin-top: 6px; }
+.sec-head p { max-width: 480px; font-size: 13px; color: var(--fg2); line-height: 1.75; }
+
+.g2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.g3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.g4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.card { border-radius: 16px; overflow: hidden; background: var(--bg1); border: 1px solid var(--line); transition: .3s var(--ease); display: flex; flex-direction: column; }
+.card:hover { border-color: rgb(var(--glow-rgb) / .45); transform: translateY(-2px); }
+.preview { position: relative; display: flex; align-items: center; justify-content: center; padding: 28px; min-height: 160px; }
+.preview.dark { background: radial-gradient(circle at 80% 20%, rgba(43,207,225,.12), #051016 72%); }
+.preview.light { background: #F3F4F0; }
+.preview.brand { background: var(--accent); }
+.preview img { max-width: 82%; max-height: 100px; object-fit: contain; display: block; }
+.meta { padding: 14px 18px 16px; display: flex; justify-content: space-between; align-items: center; gap: 12px; border-top: 1px solid var(--line); margin-top: auto; }
+.meta b { display: block; font-size: 14px; color: #fff; }
+.meta small { font-size: 11.5px; color: var(--fg2); }
+.dl-btn { display: inline-flex; align-items: center; gap: 6px; padding: 7px 13px; border-radius: 999px; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.15); font-size: 12px; white-space: nowrap; transition: .25s; }
+.dl-btn:hover { background: var(--glow); color: #031015; border-color: var(--glow); font-weight: 600; }
+.dl-btn.pri { background: var(--glow); color: #031015; border-color: var(--glow); font-weight: 600; }
+
+/* Interactive Logo Exporter */
+.exp-box { padding: 24px 28px; border-radius: 18px; background: var(--bg1); border: 1px solid var(--line); display: grid; grid-template-columns: 1.15fr .85fr; gap: 28px; align-items: center; }
+.exp-stage { border-radius: 14px; padding: 34px 24px; display: flex; align-items: center; justify-content: center; min-height: 220px; border: 1px solid var(--line); transition: background .35s; }
+.exp-stage canvas { max-width: 100%; height: auto; display: block; }
+.sw-row { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+.th { width: 28px; height: 28px; border-radius: 50%; border: 2px solid transparent; transition: .25s; }
+.th.on { border-color: #fff; transform: scale(1.12); box-shadow: 0 0 12px rgb(var(--glow-rgb)/.6); }
+.pill-btn { padding: 7px 14px; border-radius: 999px; border: 1px solid var(--line); background: rgba(255,255,255,.04); font-size: 12px; color: var(--fg2); transition: .2s; }
+.pill-btn.on { background: var(--glow); color: #031015; border-color: var(--glow); font-weight: 600; }
+
+/* Color Copy Tiles */
+.swatch-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; }
+.swatch { border-radius: 14px; overflow: hidden; border: 1px solid var(--line); background: var(--bg1); cursor: pointer; transition: .25s; }
+.swatch:hover { transform: translateY(-3px); border-color: var(--glow); }
+.swatch .c { height: 92px; position: relative; }
+.swatch .c span { position: absolute; right: 10px; top: 8px; font-size: 10px; padding: 2px 7px; border-radius: 999px; background: rgba(0,0,0,.45); color: #fff; opacity: 0; transition: .2s; }
+.swatch:hover .c span { opacity: 1; }
+.swatch .t { padding: 12px 14px; font-size: 11px; color: var(--fg2); line-height: 1.6; }
+.swatch .t b { display: block; font-size: 15px; color: #fff; margin-bottom: 2px; }
+
+/* History gallery */
+.hist-img { width: 100%; display: block; object-fit: cover; background: #141A1E; cursor: zoom-in; }
+
+/* Lightbox */
+.lb { position: fixed; inset: 0; z-index: 200; background: rgba(2,10,14,.92); backdrop-filter: blur(16px); display: none; align-items: center; justify-content: center; padding: 40px; cursor: zoom-out; }
+.lb.open { display: flex; }
+.lb img { max-width: 92vw; max-height: 88vh; border-radius: 12px; box-shadow: 0 30px 80px rgba(0,0,0,.7); }
+.toast { position: fixed; bottom: 28px; left: 50%; transform: translateX(-50%) translateY(20px); padding: 10px 20px; border-radius: 999px; background: var(--glow); color: #031015; font-size: 13px; font-weight: 600; opacity: 0; pointer-events: none; transition: .3s var(--ease); z-index: 300; }
+.toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+@media (max-width: 980px) {
+  .g3, .g4, .swatch-grid, .exp-box { grid-template-columns: 1fr 1fr; }
+  .portal-nav { padding: 0 16px; }
+  .wrap { padding: 24px 16px 60px; }
+}
+</style>
+</head>
+<body>
+
+<header class="portal-nav">
+  <a class="portal-brand" href="index.html">
+    <img src="标志导出_斜块品牌色/10_深海青.png" alt="方舟智创 FANGZHOU" />
+  </a>
+  <nav class="portal-tabs">
+    <a href="index.html">演示版 · 12屏作品集</a>
+    <a href="manual.html">完整版 · VI规范手册</a>
+    <a href="assets.html" class="on">资产库 · 全部素材下载</a>
+  </nav>
+  <a href="index.html" class="dl-btn pri" style="font-size:12px">进入全屏演示 →</a>
+</header>
+
+<div class="wrap">
+  <section class="hero">
+    <div>
+      <div class="lab" style="color:var(--glow)">Fangzhou Visual Identity · Delivery Hub</div>
+      <h1>方舟智创 · 整套视觉资产交付库</h1>
+      <p>无需翻找文件夹或打开任何代码。在这里直接在线预览并一键下载全套品牌成果：新版主题色标志、16 套原始透明标志、实时配色标志生成器、色彩变量、3D 银质浮雕模型以及工牌全历程演进对照。</p>
+    </div>
+    <div class="hero-stats num">
+      <div><b>3</b><span>在线展示视图</span></div>
+      <div><b>19</b><span>高清透明标志 PNG</span></div>
+      <div><b>5</b><span>动态主题色系</span></div>
+    </div>
+  </section>
+
+  <!-- 1. Ready-to-use Themed Logos -->
+  <section class="sec">
+    <div class="sec-head">
+      <div><div class="lab" style="color:var(--glow)">01 · Updated Brand Logos</div><h2>新版品牌色标志（AN 斜块已统一深海青）</h2></div>
+      <p>保留原标全部字形与模块比例，仅将 AN 斜块升级为深海青品牌色渐变，点击即可直接下载高清透明 PNG。</p>
+    </div>
+    <div class="g3">
+      <div class="card">
+        <div class="preview dark"><img src="标志导出_斜块品牌色/10_深海青.png" alt="横版浅色" /></div>
+        <div class="meta"><div><b>横版 · 浅色版（深底用）</b><small>10_深海青.png · 透明背景</small></div><a class="dl-btn pri" href="标志导出_斜块品牌色/10_深海青.png" download>下载 PNG</a></div>
+      </div>
+      <div class="card">
+        <div class="preview light"><img src="标志导出_斜块品牌色/2_深海青.png" alt="横版深色" /></div>
+        <div class="meta"><div><b>横版 · 深色版（白底用）</b><small>2_深海青.png · 透明背景</small></div><a class="dl-btn pri" href="标志导出_斜块品牌色/2_深海青.png" download>下载 PNG</a></div>
+      </div>
+      <div class="card">
+        <div class="preview dark"><img src="标志导出_斜块品牌色/9_深海青.png" alt="竖版浅色" /></div>
+        <div class="meta"><div><b>竖版 · 浅色版（居中/方形用）</b><small>9_深海青.png · 透明背景</small></div><a class="dl-btn pri" href="标志导出_斜块品牌色/9_深海青.png" download>下载 PNG</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Interactive Custom Color Logo Exporter -->
+  <section class="sec">
+    <div class="sec-head">
+      <div><div class="lab" style="color:var(--glow)">02 · Live Logo Exporter</div><h2>在线生成并导出任意配色透明标志</h2></div>
+      <p>切换 5 套主题色或「渐变 / 纯色」，实时预览并在浏览器里直接导出高清透明 PNG，供 PPT、官网、海报直接使用。</p>
+    </div>
+    <div class="exp-box">
+      <div class="exp-stage dark" id="expStage"><canvas id="expCanvas"></canvas></div>
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <div>
+          <div class="lab" style="color:var(--fg2);margin-bottom:8px">选择版式</div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap" id="expVer">
+            <button class="pill-btn on" data-v="10">横版 · 浅色</button>
+            <button class="pill-btn" data-v="2">横版 · 深色</button>
+            <button class="pill-btn" data-v="9">竖版 · 浅色</button>
+            <button class="pill-btn" data-v="1">竖版 · 深色</button>
+          </div>
+        </div>
+        <div>
+          <div class="lab" style="color:var(--fg2);margin-bottom:8px">选择 AN 斜块主题色</div>
+          <div class="sw-row" id="expThemes"></div>
+        </div>
+        <div>
+          <div class="lab" style="color:var(--fg2);margin-bottom:8px">斜块填充模式</div>
+          <div style="display:flex;gap:8px" id="expMode">
+            <button class="pill-btn on" data-m="grad">品牌渐变</button>
+            <button class="pill-btn" data-m="solid">品牌纯色（适合印刷/小尺寸）</button>
+          </div>
+        </div>
+        <div style="padding-top:6px">
+          <button class="dl-btn pri" id="expDl" style="padding:10px 22px;font-size:13px">↓ 导出当前配色透明 PNG</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. One-Click Color Palette -->
+  <section class="sec">
+    <div class="sec-head">
+      <div><div class="lab" style="color:var(--glow)">03 · Color Swatches</div><h2>品牌色板（点击色块直接复制色值）</h2></div>
+      <p>默认深海青体系全套色值，点击任意卡片即可复制 HEX 色值，也可一键复制整套 CSS 变量。</p>
+    </div>
+    <div class="swatch-grid" id="swatches"></div>
+    <div style="margin-top:16px;display:flex;gap:12px;flex-wrap:wrap">
+      <button class="dl-btn" id="copyCss">复制整套 CSS 配色变量</button>
+      <a class="dl-btn" href="assets/model/方舟原标-银质浮雕.glb" download>↓ 下载 3D 银质浮雕模型 (.glb)</a>
+    </div>
+  </section>
+
+  <!-- 4. Evolution Comparison -->
+  <section class="sec">
+    <div class="sec-head">
+      <div><div class="lab" style="color:var(--glow)">04 · Design Evolution</div><h2>工牌设计演进全记录（点击查看大图）</h2></div>
+      <p>保留早期交接包里的原案、青黑互换稿与五款折光对照，方便团队向客户对比展示最终 4.0 动态体系的升级跨度。</p>
+    </div>
+    <div class="g3">
+      <div class="card">
+        <img class="hist-img" src="assets/history/工牌03-黑青银原案.png" alt="早期原案" onclick="zoom(this.src)" />
+        <div class="meta"><div><b>早期原案 · 黑青银</b><small>三段横切斜带 + 厚银框</small></div><a class="dl-btn" href="assets/history/工牌03-黑青银原案.png" download>原图</a></div>
+      </div>
+      <div class="card">
+        <img class="hist-img" src="assets/history/工牌03-青黑银互换.png" alt="青黑互换" onclick="zoom(this.src)" />
+        <div class="meta"><div><b>早期试样 · 青黑互换</b><small>上区大面松石青对照稿</small></div><a class="dl-btn" href="assets/history/工牌03-青黑银互换.png" download>原图</a></div>
+      </div>
+      <div class="card">
+        <img class="hist-img" src="assets/history/五款对照.jpg" alt="五款折光对照" onclick="zoom(this.src)" />
+        <div class="meta"><div><b>早期五款青色折光对照</b><small>烟墨青 / 银灰青 / 松石青 / 深海青 / 冰青</small></div><a class="dl-btn" href="assets/history/五款对照.jpg" download>原图</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. All 16 Original Logos -->
+  <section class="sec">
+    <div class="sec-head">
+      <div><div class="lab" style="color:var(--glow)">05 · Original Logo Archive</div><h2>原始 16 套透明标志完整画廊</h2></div>
+      <p>1–8 号为深色版（用于白底/浅底），9–16 号为浅色版（用于深底/品牌色底），涵括横版、竖版、纯中文与纯英文全部组合。</p>
+    </div>
+    <div class="g4" id="origGrid"></div>
+  </section>
+</div>
+
+<div class="lb" id="lb" onclick="this.classList.remove('open')"><img id="lbImg" alt="放大预览" /></div>
+<div class="toast" id="toast">已复制到剪贴板</div>
+
+<script>
+function toast(msg) {
+  const t = document.getElementById("toast"); t.textContent = msg; t.classList.add("show");
+  clearTimeout(toast.t); toast.t = setTimeout(() => t.classList.remove("show"), 1800);
+}
+function zoom(src) { document.getElementById("lbImg").src = src; document.getElementById("lb").classList.add("open"); }
+window.zoom = zoom;
+
+/* Swatches */
+const COLORS = [
+  ["深渊墨","Abyss","#051016","主舞台底色 · 56%"],
+  ["深海蓝","Deep Sea","#14354E","暗部过渡 · 22%"],
+  ["方舟青","Ark Teal","#3B858D","品牌主色 · 12%"],
+  ["冷银","Cool Silver","#C7CBD0","标志金属 · 7%"],
+  ["冰青","Ice Glow","#2BCFE1","交互高亮 · ≤3%"],
+  ["羽青","Plume","#2E7188","次级色块"],
+  ["孔雀蓝","Peacock","#1773B3","数据图表"],
+  ["薄荷雾","Mint Mist","#8FDCD2","辅助标题"],
+  ["纸白","Paper","#F2F3EF","纸面与色卡"],
+  ["墨黑","Ink Black","#101314","正文与深底文字"]
+];
+document.getElementById("swatches").innerHTML = COLORS.map(([n,en,h,u]) => `
+  <div class="swatch" onclick="navigator.clipboard?.writeText('${h}');toast('已复制 ${n} ${h}')">
+    <div class="c" style="background:${h}"><span>点击复制</span></div>
+    <div class="t num"><b>${n}</b>${h} · ${en}<br>${u}</div>
+  </div>`).join("");
+
+document.getElementById("copyCss").onclick = () => {
+  const css = `:root {\n  --fz-abyss: #051016;\n  --fz-sea: #14354E;\n  --fz-brand: #3B858D;\n  --fz-plume: #2E7188;\n  --fz-glow: #2BCFE1;\n  --fz-mint: #8FDCD2;\n  --fz-silver: #C7CBD0;\n  --fz-paper: #F2F3EF;\n  --fz-ink: #101314;\n}`;
+  navigator.clipboard?.writeText(css); toast("已复制整套 CSS 配色变量");
+};
+
+/* Original 16 logos gallery */
+const LABELS = [
+  "竖版中英组合","横版中英组合","竖版英文组合","横版英文组合",
+  "竖版中文组合","横版中文组合","纯文字竖排","纯文字横排"
+];
+document.getElementById("origGrid").innerHTML = Array.from({length:16}, (_,i) => {
+  const id = i + 1, isLight = id >= 9, label = LABELS[(id-1)%8] + (isLight ? " · 浅色" : " · 深色");
+  return `<div class="card">
+    <div class="preview ${isLight?"dark":"light"}" style="min-height:130px;padding:20px"><img src="assets/logos/${id}.png" alt="${label}" /></div>
+    <div class="meta"><div><b>${id}.png</b><small>${label}</small></div><a class="dl-btn" href="assets/logos/${id}.png" download="fangzhou_logo_${id}.png">下载</a></div>
+  </div>`;
+}).join("");
+
+/* Live Recolored Logo Exporter */
+const EXP_THEMES = {
+  deep:    { name:"深海青", stops:["#2BCFE1","#3B858D","#8FDCD2"], solid:"#3B858D", dark:["#3B858D","#2E7188","#2BCFE1"] },
+  glacier: { name:"冰川蓝", stops:["#3BC4FF","#1F8FC9","#A6DCF7"], solid:"#1F8FC9", dark:["#1F8FC9","#1E6FA8","#3BC4FF"] },
+  jade:    { name:"芯片青", stops:["#5EEAD4","#2A9D8F","#A7F0E0"], solid:"#2A9D8F", dark:["#2A9D8F","#1F7A6B","#5EEAD4"] },
+  aurora:  { name:"极光",   stops:["#3EF0E6","#4B6BFF","#B98BFF"], solid:"#4B6BFF", dark:["#4B6BFF","#3A47A8","#3EF0E6"] },
+  ember:   { name:"深海金", stops:["#F2C46D","#3B858D","#E9D9B0"], solid:"#F2C46D", dark:["#3B858D","#C89843","#F2C46D"] }
+};
+let expVer = "10", expTh = "deep", expMode = "grad";
+const imgCache = {};
+function hexRgb(h){ const n=parseInt(h.slice(1),16); return [n>>16&255, n>>8&255, n&255]; }
+function renderExporter() {
+  const src = `assets/logos/${expVer}.png`, isDarkLogo = expVer === "1" || expVer === "2";
+  document.getElementById("expStage").className = "exp-stage " + (isDarkLogo ? "light" : "dark");
+  const draw = img => {
+    const cv = document.getElementById("expCanvas"); cv.width = img.naturalWidth; cv.height = img.naturalHeight;
+    const ctx = cv.getContext("2d"); ctx.clearRect(0,0,cv.width,cv.height); ctx.drawImage(img,0,0);
+    const id = ctx.getImageData(0,0,cv.width,cv.height), d = id.data, W = cv.width, H = cv.height;
+    let minX = W, maxX = 0;
+    const blu = new Float32Array(W*H);
+    for (let y=0; y<H; y++) for (let x=0; x<W; x++) {
+      const idx = (y*W+x)*4, a = d[idx+3];
+      if (!a) continue;
+      const w = Math.max(0, Math.min(1, (d[idx+2] - d[idx] - 12) / 40));
+      blu[y*W+x] = w;
+      if (w > 0.5) { if (x < minX) minX = x; if (x > maxX) maxX = x; }
+    }
+    const th = EXP_THEMES[expTh];
+    const [c0,c1,c2] = (isDarkLogo ? th.dark : th.stops).map(hexRgb);
+    const cs = hexRgb(th.solid);
+    for (let y=0; y<H; y++) for (let x=0; x<W; x++) {
+      const w = blu[y*W+x]; if (w <= 0) continue;
+      const idx = (y*W+x)*4;
+      let r, g, b;
+      if (expMode === "solid") { [r,g,b] = cs; }
+      else {
+        const t = Math.max(0, Math.min(1, (x - minX) / Math.max(1, maxX - minX)));
+        if (t < 0.62) { const u = t / 0.62; r=c0[0]+(c1[0]-c0[0])*u; g=c0[1]+(c1[1]-c0[1])*u; b=c0[2]+(c1[2]-c0[2])*u; }
+        else { const u = (t - 0.62) / 0.38; r=c1[0]+(c2[0]-c1[0])*u; g=c1[1]+(c2[1]-c1[1])*u; b=c1[2]+(c2[2]-c1[2])*u; }
+      }
+      d[idx]   = Math.round(d[idx]*(1-w) + r*w);
+      d[idx+1] = Math.round(d[idx+1]*(1-w) + g*w);
+      d[idx+2] = Math.round(d[idx+2]*(1-w) + b*w);
+    }
+    ctx.putImageData(id, 0, 0);
+  };
+  if (imgCache[src]) draw(imgCache[src]);
+  else { const im = new Image(); im.onload = () => { imgCache[src] = im; draw(im); }; im.src = src; }
+}
+
+document.getElementById("expThemes").innerHTML = Object.entries(EXP_THEMES).map(([k,t]) =>
+  `<button class="th ${k===expTh?"on":""}" data-k="${k}" title="${t.name}" style="background:conic-gradient(${t.stops[0]} 0 33%, ${t.stops[1]} 0 66%, ${t.stops[2]} 0)"></button>`).join("");
+document.querySelectorAll("#expThemes .th").forEach(b => b.onclick = () => {
+  expTh = b.dataset.k;
+  document.querySelectorAll("#expThemes .th").forEach(x => x.classList.toggle("on", x===b));
+  renderExporter();
+});
+document.querySelectorAll("#expVer .pill-btn").forEach(b => b.onclick = () => {
+  expVer = b.dataset.v;
+  document.querySelectorAll("#expVer .pill-btn").forEach(x => x.classList.toggle("on", x===b));
+  renderExporter();
+});
+document.querySelectorAll("#expMode .pill-btn").forEach(b => b.onclick = () => {
+  expMode = b.dataset.m;
+  document.querySelectorAll("#expMode .pill-btn").forEach(x => x.classList.toggle("on", x===b));
+  renderExporter();
+});
+document.getElementById("expDl").onclick = () => {
+  const a = document.createElement("a");
+  a.download = `方舟智创标志_${expVer}_${EXP_THEMES[expTh].name}_${expMode==="solid"?"纯色":"渐变"}.png`;
+  a.href = document.getElementById("expCanvas").toDataURL("image/png");
+  a.click();
+  toast("已开始下载透明 PNG 标志");
+};
+renderExporter();
+</script>
+</body>
+</html>
