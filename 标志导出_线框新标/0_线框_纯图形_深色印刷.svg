@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 220" fill="none">
+  <defs>
+    <linearGradient id="fzWireDark" x1="0" y1="0" x2="304" y2="220" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#14354E"/>
+      <stop offset="52%" stop-color="#3B858D"/>
+      <stop offset="100%" stop-color="#2E7188"/>
+    </linearGradient>
+  </defs>
+  <g stroke="url(#fzWireDark)" stroke-width="6.2" stroke-linejoin="round">
+  <rect x="56.5" y="1.6" width="85.9" height="51.9" rx="5.5"/>
+  <rect x="162.6" y="1.6" width="84.9" height="51.9" rx="5.5"/>
+  <rect x="2.5" y="56.5" width="50.9" height="51.9" rx="5.5"/>
+  <rect x="250.6" y="56.5" width="51.9" height="51.9" rx="5.5"/>
+  <rect x="56.5" y="112.5" width="85.9" height="50.9" rx="5.5"/>
+  <rect x="162.6" y="112.5" width="84.9" height="50.9" rx="5.5"/>
+  <rect x="2.5" y="167.6" width="50.9" height="49.9" rx="5.5"/>
+  <rect x="250.6" y="167.6" width="51.9" height="49.9" rx="5.5"/>
+  </g>
+</svg>

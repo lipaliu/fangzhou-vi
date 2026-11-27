@@ -45,8 +45,8 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .g2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
 .g3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 .g4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
-.card { border-radius: 16px; overflow: hidden; background: var(--bg1); border: 1px solid var(--line); transition: .3s var(--ease); display: flex; flex-direction: column; }
-.card:hover { border-color: rgb(var(--glow-rgb) / .45); transform: translateY(-2px); }
+.card { border-radius: 14px; overflow: hidden; background: var(--bg1); border: 1px solid rgb(var(--glow-rgb) / .16); transition: .3s var(--ease); display: flex; flex-direction: column; }
+.card:hover { border-color: rgb(var(--glow-rgb) / .52); box-shadow: 0 0 24px rgb(var(--glow-rgb) / .09); transform: translateY(-2px); }
 .preview { position: relative; display: flex; align-items: center; justify-content: center; padding: 28px; min-height: 160px; }
 .preview.dark { background: radial-gradient(circle at 80% 20%, rgba(43,207,225,.12), #051016 72%); }
 .preview.light { background: #F3F4F0; }
@@ -100,7 +100,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 
 <header class="portal-nav">
   <a class="portal-brand" href="index.html">
-    <img src="标志导出_点阵新标/10_点阵_横版浅色.png" alt="方舟智创 FANGZHOU" />
+    <img src="标志导出_线框新标/10_线框_横版浅色.png" alt="方舟智创 FANGZHOU" />
   </a>
   <nav class="portal-tabs">
     <a href="index.html">演示版 · 12屏作品集</a>
@@ -113,45 +113,55 @@ button { font: inherit; color: inherit; cursor: pointer; }
 <div class="wrap">
   <section class="hero">
     <div>
-      <div class="lab" style="color:var(--glow)">Fangzhou Visual Identity · Delivery Hub</div>
+      <div class="lab" style="color:var(--glow)">Fangzhou Wireframe VI 5.0 · Delivery Hub</div>
       <h1>方舟智创 · 整套视觉资产交付库</h1>
-      <p>无需翻找文件夹或打开任何代码。在这里直接在线预览并一键下载全套品牌成果：新版主题色标志、16 套原始透明标志、实时配色标志生成器、色彩变量、3D 银质浮雕模型以及工牌全历程演进对照。</p>
+      <p>无需翻找文件夹或打开任何代码。在这里直接在线预览并一键下载全套品牌成果：新版「V1 · 线框主标」全套透明 PNG 与矢量 SVG、在线配色标志生成器、色彩变量、3D 模型以及 16 套原始标志档案。</p>
     </div>
     <div class="hero-stats num">
       <div><b>3</b><span>在线展示视图</span></div>
-      <div><b>19</b><span>高清透明标志 PNG</span></div>
+      <div><b>23</b><span>PNG / SVG 标志</span></div>
       <div><b>5</b><span>动态主题色系</span></div>
     </div>
   </section>
 
-  <!-- 1. Ready-to-use Dot-Matrix Master Logos -->
+  <!-- 1. Ready-to-use Wireframe Master Logos -->
   <section class="sec">
     <div class="sec-head">
-      <div><div class="lab" style="color:var(--glow)">01 · New Dot-Matrix Master Logos</div><h2>新版点阵主标（全套透明 PNG 直接下载）</h2></div>
-      <p>8 模块发光点阵图形 ＋ 深海青渐变 AN 斜块字标，兼顾暗底发光氛围与白底印刷锐度，点击即可下载透明 PNG。</p>
+      <div><div class="lab" style="color:var(--glow)">01 · New Wireframe Master Logos</div><h2>新版线框主标（透明 PNG ＋ 纯矢量 SVG 直接下载）</h2></div>
+      <p>8 模块圆角发光线框 ＋ 深海青渐变 AN 斜块字标，深底通透发光、白底光学加粗防发虚，点击即可下载透明 PNG 或无损矢量 SVG。</p>
     </div>
     <div class="g3">
       <div class="card">
-        <div class="preview dark"><img src="标志导出_点阵新标/10_点阵_横版浅色.png" alt="点阵横版浅色" /></div>
-        <div class="meta"><div><b>点阵主标 · 横版浅色</b><small>10_点阵_横版浅色.png · 深底专用</small></div><a class="dl-btn pri" href="标志导出_点阵新标/10_点阵_横版浅色.png" download>下载 PNG</a></div>
+        <div class="preview dark"><img src="标志导出_线框新标/10_线框_横版浅色.png" alt="线框横版浅色" /></div>
+        <div class="meta"><div><b>线框主标 · 横版浅色</b><small>10_线框_横版浅色.png · 深底发光专用</small></div><a class="dl-btn pri" href="标志导出_线框新标/10_线框_横版浅色.png" download>下载 PNG</a></div>
       </div>
       <div class="card">
-        <div class="preview light"><img src="标志导出_点阵新标/2_点阵_横版深色.png" alt="点阵横版深色" /></div>
-        <div class="meta"><div><b>点阵主标 · 横版深色</b><small>2_点阵_横版深色.png · 白底/纸张</small></div><a class="dl-btn pri" href="标志导出_点阵新标/2_点阵_横版深色.png" download>下载 PNG</a></div>
+        <div class="preview light"><img src="标志导出_线框新标/2_线框_横版深色.png" alt="线框横版深色" /></div>
+        <div class="meta"><div><b>线框主标 · 横版深色</b><small>2_线框_横版深色.png · 白底光学加粗</small></div><a class="dl-btn pri" href="标志导出_线框新标/2_线框_横版深色.png" download>下载 PNG</a></div>
       </div>
       <div class="card">
-        <div class="preview dark"><img src="标志导出_点阵新标/0_点阵_纯图形.png" alt="点阵纯图形标" /></div>
-        <div class="meta"><div><b>点阵独立图形标</b><small>0_点阵_纯图形.png · 头像/图标专用</small></div><a class="dl-btn pri" href="标志导出_点阵新标/0_点阵_纯图形.png" download>下载 PNG</a></div>
+        <div class="preview dark"><img src="标志导出_线框新标/0_线框_纯图形.png" alt="线框独立图形标" /></div>
+        <div class="meta"><div><b>线框独立图形标</b><small>0_线框_纯图形.png · 头像 / 图标专用</small></div><a class="dl-btn pri" href="标志导出_线框新标/0_线框_纯图形.png" download>下载 PNG</a></div>
       </div>
     </div>
     <div class="g2" style="margin-top:20px">
       <div class="card">
-        <div class="preview dark"><img src="标志导出_点阵新标/9_点阵_竖版浅色.png" alt="点阵竖版浅色" /></div>
-        <div class="meta"><div><b>点阵主标 · 竖版浅色</b><small>9_点阵_竖版浅色.png · 居中/方形版式</small></div><a class="dl-btn pri" href="标志导出_点阵新标/9_点阵_竖版浅色.png" download>下载 PNG</a></div>
+        <div class="preview dark"><img src="标志导出_线框新标/9_线框_竖版浅色.png" alt="线框竖版浅色" /></div>
+        <div class="meta"><div><b>线框主标 · 竖版浅色</b><small>9_线框_竖版浅色.png · 居中 / 方形版式</small></div><a class="dl-btn pri" href="标志导出_线框新标/9_线框_竖版浅色.png" download>下载 PNG</a></div>
       </div>
       <div class="card">
-        <div class="preview light"><img src="标志导出_点阵新标/1_点阵_竖版深色.png" alt="点阵竖版深色" /></div>
-        <div class="meta"><div><b>点阵主标 · 竖版深色</b><small>1_点阵_竖版深色.png · 浅底居中版式</small></div><a class="dl-btn pri" href="标志导出_点阵新标/1_点阵_竖版深色.png" download>下载 PNG</a></div>
+        <div class="preview light"><img src="标志导出_线框新标/1_线框_竖版深色.png" alt="线框竖版深色" /></div>
+        <div class="meta"><div><b>线框主标 · 竖版深色</b><small>1_线框_竖版深色.png · 浅底居中版式</small></div><a class="dl-btn pri" href="标志导出_线框新标/1_线框_竖版深色.png" download>下载 PNG</a></div>
+      </div>
+    </div>
+    <div class="g2" style="margin-top:20px">
+      <div class="card">
+        <div class="preview dark"><img src="标志导出_线框新标/0_线框_纯图形_浅色发光.svg" alt="线框独立图形标 矢量SVG" /></div>
+        <div class="meta"><div><b>纯矢量 SVG · 深底发光图形标</b><small>0_线框_纯图形_浅色发光.svg · 无限缩放</small></div><a class="dl-btn pri" href="标志导出_线框新标/0_线框_纯图形_浅色发光.svg" download>下载 SVG</a></div>
+      </div>
+      <div class="card">
+        <div class="preview light"><img src="标志导出_线框新标/0_线框_纯图形_深色印刷.svg" alt="线框独立图形标 深色矢量SVG" /></div>
+        <div class="meta"><div><b>纯矢量 SVG · 白底印刷图形标</b><small>0_线框_纯图形_深色印刷.svg · 印刷 / 矢量延展</small></div><a class="dl-btn pri" href="标志导出_线框新标/0_线框_纯图形_深色印刷.svg" download>下载 SVG</a></div>
       </div>
     </div>
   </section>
@@ -159,8 +169,8 @@ button { font: inherit; color: inherit; cursor: pointer; }
   <!-- 2. Interactive Custom Color Logo Exporter -->
   <section class="sec">
     <div class="sec-head">
-      <div><div class="lab" style="color:var(--glow)">02 · Live Logo Exporter</div><h2>在线生成并导出任意配色点阵透明标志</h2></div>
-      <p>默认导出全新「点阵主标」（也可切换原实心块对照），支持 5 套主题色与渐变/纯色填充，直接下载高清透明 PNG。</p>
+      <div><div class="lab" style="color:var(--glow)">02 · Live Logo Exporter</div><h2>在线生成并导出任意配色线框透明标志</h2></div>
+      <p>默认导出全新「V1 · 线框主标」（支持一键切换点阵变体与原实心块对照），任选 5 套主题色与渐变/纯色填充，直接下载高清透明 PNG 或当前主题矢量 SVG。</p>
     </div>
     <div class="exp-box">
       <div class="exp-stage dark" id="expStage"><canvas id="expCanvas"></canvas></div>
@@ -168,7 +178,8 @@ button { font: inherit; color: inherit; cursor: pointer; }
         <div>
           <div class="lab" style="color:var(--fg2);margin-bottom:8px">图形风格</div>
           <div style="display:flex;gap:8px;flex-wrap:wrap" id="expStyle">
-            <button class="pill-btn on" data-st="dot">新版点阵主标（主推）</button>
+            <button class="pill-btn on" data-st="wire">新版线框主标（主推）</button>
+            <button class="pill-btn" data-st="dot">点阵变体</button>
             <button class="pill-btn" data-st="solid">原实心块标志</button>
           </div>
         </div>
@@ -182,7 +193,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
           </div>
         </div>
         <div>
-          <div class="lab" style="color:var(--fg2);margin-bottom:8px">选择主题色（点阵 ＋ AN 斜块联动）</div>
+          <div class="lab" style="color:var(--fg2);margin-bottom:8px">选择主题色（线框图形 ＋ AN 斜块联动）</div>
           <div class="sw-row" id="expThemes"></div>
         </div>
         <div>
@@ -192,8 +203,9 @@ button { font: inherit; color: inherit; cursor: pointer; }
             <button class="pill-btn" data-m="solid">品牌纯色（适合印刷/小尺寸）</button>
           </div>
         </div>
-        <div style="padding-top:6px">
+        <div style="padding-top:6px;display:flex;gap:10px;flex-wrap:wrap">
           <button class="dl-btn pri" id="expDl" style="padding:10px 22px;font-size:13px">↓ 导出当前配色透明 PNG</button>
+          <button class="dl-btn" id="expSvg" style="padding:10px 18px;font-size:13px">↓ 导出当前配色纯图形 SVG</button>
         </div>
       </div>
     </div>
@@ -300,10 +312,16 @@ const EXP_THEMES = {
   aurora:  { name:"极光",   stops:["#3EF0E6","#4B6BFF","#B98BFF"], solid:"#4B6BFF", dark:["#4B6BFF","#3A47A8","#3EF0E6"] },
   ember:   { name:"深海金", stops:["#F2C46D","#3B858D","#E9D9B0"], solid:"#F2C46D", dark:["#3B858D","#C89843","#F2C46D"] }
 };
-let expVer = "10", expTh = "deep", expMode = "grad", expStyle = "dot";
+let expVer = "10", expTh = "deep", expMode = "grad", expStyle = "wire";
 const EMB = [[55,0,89,55],[161,0,88,55],[1,55,54,55],[249,55,55,55],[55,111,89,54],[161,111,88,54],[1,166,54,53],[249,166,55,53]];
 const imgCache = {};
 function hexRgb(h){ const n=parseInt(h.slice(1),16); return [n>>16&255, n>>8&255, n&255]; }
+function rrect(ctx, x, y, w, h, r) {
+  ctx.beginPath(); ctx.moveTo(x+r,y); ctx.lineTo(x+w-r,y); ctx.arcTo(x+w,y,x+w,y+r,r);
+  ctx.lineTo(x+w,y+h-r); ctx.arcTo(x+w,y+h,x+w-r,y+h,r);
+  ctx.lineTo(x+r,y+h); ctx.arcTo(x,y+h,x,y+h-r,r);
+  ctx.lineTo(x,y+r); ctx.arcTo(x,y,x+r,y,r); ctx.closePath();
+}
 function renderExporter() {
   const src = `assets/logos/${expVer}.png`, isDarkLogo = expVer === "1" || expVer === "2", isVert = expVer === "1" || expVer === "9";
   document.getElementById("expStage").className = "exp-stage " + (isDarkLogo ? "light" : "dark");
@@ -316,7 +334,7 @@ function renderExporter() {
     for (let y=0; y<H; y++) for (let x=0; x<W; x++) {
       const idx = (y*W+x)*4, a = d[idx+3];
       if (!a) continue;
-      if (expStyle === "dot" && ((isVert && y < 225) || (!isVert && x < 315))) { d[idx+3] = 0; continue; }
+      if (expStyle !== "solid" && ((isVert && y < 225) || (!isVert && x < 315))) { d[idx+3] = 0; continue; }
       const w = Math.max(0, Math.min(1, (d[idx+2] - d[idx] - 12) / 40));
       blu[y*W+x] = w;
       if (w > 0.5) { if (x < minX) minX = x; if (x > maxX) maxX = x; }
@@ -339,8 +357,22 @@ function renderExporter() {
       d[idx+2] = Math.round(d[idx+2]*(1-w) + b*w);
     }
     ctx.putImageData(id, 0, 0);
-    if (expStyle === "dot") {
-      const ox = isVert ? 133 : 0;
+    const ox = isVert ? 133 : 0;
+    if (expStyle === "wire") {
+      ctx.save();
+      const sw = isDarkLogo ? 6.8 : 5.8, pad = sw * 0.25;
+      let strokeStyle = th.solid;
+      if (expMode !== "solid") {
+        const grd = ctx.createLinearGradient(ox, 0, ox + 304, 220);
+        if (isDarkLogo) { grd.addColorStop(0, th.dark[0]); grd.addColorStop(.52, th.dark[1]); grd.addColorStop(1, th.dark[2]); }
+        else { grd.addColorStop(0, "#C0FBFF"); grd.addColorStop(.38, th.stops[0]); grd.addColorStop(.75, th.stops[2]); grd.addColorStop(1, th.stops[0]); }
+        strokeStyle = grd;
+      }
+      if (!isDarkLogo) { ctx.shadowColor = th.stops[0]; ctx.shadowBlur = 7; }
+      ctx.strokeStyle = strokeStyle; ctx.lineWidth = sw; ctx.lineJoin = "round";
+      EMB.forEach(([bx, by, bw, bh]) => { rrect(ctx, ox + bx + pad, by + pad, bw - pad * 2, bh - pad * 2, 6); ctx.stroke(); });
+      ctx.restore();
+    } else if (expStyle === "dot") {
       EMB.forEach(([bx, by, bw, bh]) => {
         const cols = bw > 70 ? 8 : 5, rows = 5;
         const sx = (bw - 10.8) / (cols - 1), sy = (bh - 10.4) / (rows - 1);
@@ -391,10 +423,24 @@ document.querySelectorAll("#expMode .pill-btn").forEach(b => b.onclick = () => {
 });
 document.getElementById("expDl").onclick = () => {
   const a = document.createElement("a");
-  a.download = `方舟智创_${expStyle==="dot"?"点阵主标":"实心标"}_${expVer}_${EXP_THEMES[expTh].name}_${expMode==="solid"?"纯色":"渐变"}.png`;
+  const stLabel = expStyle==="wire"?"线框主标":expStyle==="dot"?"点阵标":"实心标";
+  a.download = `方舟智创_${stLabel}_${expVer}_${EXP_THEMES[expTh].name}_${expMode==="solid"?"纯色":"渐变"}.png`;
   a.href = document.getElementById("expCanvas").toDataURL("image/png");
   a.click();
   toast("已开始下载透明 PNG 标志");
+};
+document.getElementById("expSvg").onclick = () => {
+  const th = EXP_THEMES[expTh], isDarkLogo = expVer === "1" || expVer === "2";
+  const sw = isDarkLogo ? 6.2 : 5.2, pad = sw * 0.25;
+  const rects = EMB.map(([x,y,w,h]) => `<rect x="${(x+pad).toFixed(1)}" y="${(y+pad).toFixed(1)}" width="${(w-pad*2).toFixed(1)}" height="${(h-pad*2).toFixed(1)}" rx="5.5"/>`).join("\n  ");
+  const stCol = expMode === "solid" ? th.solid : "url(#g)";
+  const stops = isDarkLogo ? th.dark : [th.stops[0], th.stops[1], th.stops[2]];
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="-12 -12 328 244" fill="none"><defs><linearGradient id="g" x1="0" y1="0" x2="304" y2="220" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="${stops[0]}"/><stop offset="50%" stop-color="${stops[1]}"/><stop offset="100%" stop-color="${stops[2]}"/></linearGradient></defs><g stroke="${stCol}" stroke-width="${sw}" stroke-linejoin="round">\n  ${rects}\n</g></svg>`;
+  const blob = new Blob([svg], { type: "image/svg+xml;charset=utf-8" });
+  const a = document.createElement("a"); a.href = URL.createObjectURL(blob);
+  a.download = `方舟智创_线框纯图形_${th.name}_${isDarkLogo?"深色":"浅色"}.svg`;
+  a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+  toast("已导出当前配色纯图形矢量 SVG");
 };
 renderExporter();
 </script>
