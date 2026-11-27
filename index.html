@@ -132,8 +132,8 @@ body.an-orig { --an: linear-gradient(110deg, #93A8E6, #8094D6 60%, #C9D2F2); }
 .cb .fb { left: 0; top: 0; width: var(--w); height: var(--h); transform-origin: top; transform: rotateX(90deg); }
 .cb .fl { left: 0; top: 0; width: var(--h); height: var(--d); transform-origin: left; transform: rotateY(-90deg); }
 .cb .fr { left: var(--w); top: 0; width: var(--h); height: var(--d); transform-origin: left; transform: rotateY(-90deg); }
-.mod .ft { background: radial-gradient(circle, rgb(var(--glow-rgb) / .78) 0 1.45px, transparent 1.7px) 0 0 / 5.5px 5.5px, linear-gradient(135deg, #FFFFFF, #E4EAEE 55%, #C9D1D7); box-shadow: inset 0 0 0 .5px rgba(255,255,255,.9); }
-.mod .fk { background: linear-gradient(135deg, #B9C2C8, #8A949C 60%, #68727A); }
+.mod .ft { background: radial-gradient(circle, rgb(var(--glow-rgb) / .82) 0 1.5px, transparent 1.75px) 0 0 / 5.5px 5.5px, linear-gradient(135deg, #FFFFFF, #E4EAEE 55%, #C9D1D7); box-shadow: inset 0 0 0 .5px rgba(255,255,255,.9); }
+.mod .fk { background: radial-gradient(circle, rgb(var(--glow-rgb) / .72) 0 1.45px, transparent 1.7px) 0 0 / 5.5px 5.5px, linear-gradient(135deg, #D2DBE0, #A4AFB7 60%, #838F97); box-shadow: inset 0 0 0 .5px rgba(255,255,255,.45); }
 .mod .ff { background: linear-gradient(180deg, #C2CBD1, #8E989F); }
 .mod .fb { background: linear-gradient(180deg, #EEF3F6, #C8D1D7); }
 .mod .fl { background: linear-gradient(90deg, #DCE3E7, #B9C2C8); }
@@ -155,7 +155,7 @@ body.an-orig { --an: linear-gradient(110deg, #93A8E6, #8094D6 60%, #C9D2F2); }
 .exploded .bob { animation: bob 3.6s ease-in-out 1.15s infinite; }
 @keyframes bob { 0%,100% { transform: translateZ(0px); } 50% { transform: translateZ(10px); } }
 .proj { position: absolute; inset: 0; transform: translateZ(var(--pz)); pointer-events: none; opacity: 0; transition: opacity 1.1s var(--ease); }
-.proj .reflect { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -25%); width: var(--ew); height: calc(var(--eh) * .55); border-radius: 50%; background: radial-gradient(ellipse at 50% 35%, rgba(4, 22, 26, .58) 0%, rgb(var(--glow-rgb) / .38) 45%, transparent 78%); filter: blur(10px); }
+.proj .reflect { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -25%); width: calc(var(--ew) * 1.05); height: calc(var(--eh) * .68); border-radius: 50%; background: radial-gradient(ellipse at 50% 42%, rgba(2, 18, 22, .72) 0%, rgb(var(--glow-rgb) / .48) 42%, transparent 76%); filter: blur(9px); }
 .exploded .proj { opacity: .95; animation: projPulse 3.6s ease-in-out 1.15s infinite; }
 @keyframes projPulse { 0%,100% { opacity: .95; } 50% { opacity: .65; } }
 
@@ -405,15 +405,15 @@ body.an-orig { --an: linear-gradient(110deg, #93A8E6, #8094D6 60%, #C9D2F2); }
     <div class="inner">
       <div class="shead st">
         <div><div class="no lab">02 · 3D Chip Identity</div><h2>3D 芯片标 · 可组装、可悬浮</h2></div>
-        <p>8 个冷银模块严格沿用原标像素坐标立于芯片基板之上。点击「立起标志」，8 个模块整体垂直翻转 90° 矗立于基板上方，正反封闭立体且基板呈现柔和倒影。</p>
+        <p>8 个冷银模块严格沿用原标像素坐标立于芯片基板之上。点击「垂直立起标志」，8 个模块整体垂直翻转 90° 矗立于基板上方，正反双面点阵立体且基板呈现柔和倒影。</p>
       </div>
       <div class="tile st" style="flex:1;min-height:0;background:radial-gradient(ellipse at 50% 45%, rgb(var(--accent-rgb)/.18), var(--bg1) 72%);--d:120ms">
         <div class="traces" style="opacity:.7"></div>
         <div class="chip-scene" id="mainChip" style="position:absolute;inset:0"></div>
         <div class="lab" style="position:absolute;left:26px;bottom:22px;color:var(--fg2);z-index:5">鼠标拖动自由旋转 ↻</div>
         <div style="position:absolute;right:24px;bottom:20px;display:flex;gap:10px;z-index:5">
-          <button class="tog on" id="chipSpin" style="padding:8px 16px">自动旋转</button>
-          <button class="tog" id="chipExplode" style="padding:8px 16px">垂直立起标志</button>
+          <button class="tog on" id="chipSpin" style="padding:8px 16px;white-space:nowrap">自动旋转</button>
+          <button class="tog" id="chipExplode" style="padding:8px 16px;white-space:nowrap">垂直立起标志</button>
         </div>
       </div>
     </div>
